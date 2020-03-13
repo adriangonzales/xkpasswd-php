@@ -1,0 +1,21 @@
+{
+    "name": "adgodev/xkpasswd-php",
+    "description": "Memorable password generator",
+    "authors": [
+        {
+            "name": "Adrian Gonzales",
+            "email": "adrian@virexmachina.com"
+        }
+    ],
+    "license": "GPL-2.0-or-later",
+    "config": {
+        "platform": {
+            "php": "7.2"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Adgodev\Xkpasswd\\": "src"
+        }
+    }
+}
