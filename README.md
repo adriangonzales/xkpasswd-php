@@ -4,13 +4,19 @@
 
 Based heavily on the [xkpasswd-node](https://github.com/vot/xkpasswd-node) package. Also a nod to [battery-staple](https://github.com/geekish/battery-staple) for the inspiration.
 
+# Install
+
+```bash
+composer require adgodev/xkpasswd-php
+```
+
 # Usage
 
 You can use xkpasswd as a module in your application.
 
 **EXAMPLES**
 
-```
+```php
 use Adgodev\Xkpasswd\Generator;
 
 Generator::generate();
@@ -50,7 +56,7 @@ as a JSON file, text file or an array via `wordList` function.
 
 **EXAMPLE** Default behaviour
 
-```
+```php
 use Adgodev\Xkpasswd\Generator;
 
 Generator::generate();
@@ -60,7 +66,7 @@ Generator::generate();
 
 **EXAMPLE** Specify complexity
 
-```
+```php
 use Adgodev\Xkpasswd\Generator;
 
 Generator::generate([
@@ -78,7 +84,7 @@ Generator::generate([
 
 **EXAMPLE** Specify custom pattern
 
-```
+```php
 use Adgodev\Xkpasswd\Generator;
 
 Generator::generate([
@@ -90,7 +96,7 @@ Generator::generate([
 
 **EXAMPLE** Specify custom word list / dictionary
 
-```
+```php
 use Adgodev\Xkpasswd\Generator;
 
 Generator::generate([
@@ -100,7 +106,7 @@ Generator::generate([
 // orange.apple.banana
 ```
 
-```
+```php
 use Adgodev\Xkpasswd\Generator;
 
 Generator::generate([
