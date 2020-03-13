@@ -1,6 +1,8 @@
 {
     "name": "adgodev/xkpasswd-php",
     "description": "Memorable password generator",
+    "type": "library",
+    "keywords": ["password", "xkcd"],
     "authors": [
         {
             "name": "Adrian Gonzales",
