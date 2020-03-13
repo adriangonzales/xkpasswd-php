@@ -11,7 +11,7 @@ You can use xkpasswd as a module in your application.
 **EXAMPLES**
 
 ```
-use Adgodev\Passwd\Generator;
+use Adgodev\Xkpasswd\Generator;
 
 Generator::generate();
 
@@ -51,7 +51,7 @@ as a JSON file, text file or an array via `wordList` function.
 **EXAMPLE** Default behaviour
 
 ```
-use Adgodev\Passwd\Generator;
+use Adgodev\Xkpasswd\Generator;
 
 Generator::generate();
 
@@ -61,7 +61,7 @@ Generator::generate();
 **EXAMPLE** Specify complexity
 
 ```
-use Adgodev\Passwd\Generator;
+use Adgodev\Xkpasswd\Generator;
 
 Generator::generate([
     'complexity' => 5
@@ -79,7 +79,7 @@ Generator::generate([
 **EXAMPLE** Specify custom pattern
 
 ```
-use Adgodev\Passwd\Generator;
+use Adgodev\Xkpasswd\Generator;
 
 Generator::generate([
     'pattern' => 'wdwd'
@@ -91,7 +91,7 @@ Generator::generate([
 **EXAMPLE** Specify custom word list / dictionary
 
 ```
-use Adgodev\Passwd\Generator;
+use Adgodev\Xkpasswd\Generator;
 
 Generator::generate([
     'wordList' => 'myWordList.json'
@@ -101,7 +101,7 @@ Generator::generate([
 ```
 
 ```
-use Adgodev\Passwd\Generator;
+use Adgodev\Xkpasswd\Generator;
 
 Generator::generate([
     'wordList' => 'myWordList.txt'
