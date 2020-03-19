@@ -17,20 +17,20 @@ You can use xkpasswd as a module in your application.
 **EXAMPLES**
 
 ```php
-use Adgodev\Xkpasswd\Generator;
+use Adgodev\Xkpasswd\PasswordGenerator;
 
-Generator::generate();
+PasswordGenerator::generate();
 
 // valuable=bear=difference=53
 
-Generator::generate([
+PasswordGenerator::generate([
     'complexity' => 5,
     'separators' => '#+-'
 ]);
 
 // addition#wheat#congress#manner#lonely#20
 
-Generator::generate([
+PasswordGenerator::generate([
     'wordList' => 'myWordList.json'
 ]);
 
@@ -57,9 +57,9 @@ as a JSON file, text file or an array via `wordList` function.
 **EXAMPLE** Default behaviour
 
 ```php
-use Adgodev\Xkpasswd\Generator;
+use Adgodev\Xkpasswd\PasswordGenerator;
 
-Generator::generate();
+PasswordGenerator::generate();
 
 // hide+threw+money+61
 ```
@@ -67,15 +67,15 @@ Generator::generate();
 **EXAMPLE** Specify complexity
 
 ```php
-use Adgodev\Xkpasswd\Generator;
+use Adgodev\Xkpasswd\PasswordGenerator;
 
-Generator::generate([
+PasswordGenerator::generate([
     'complexity' => 5
 ]);
 
 // join=industrial=wide=direction=lungs=16
 
-Generator::generate([
+PasswordGenerator::generate([
     'complexity' => 6
 ]);
 
@@ -85,9 +85,9 @@ Generator::generate([
 **EXAMPLE** Specify custom pattern
 
 ```php
-use Adgodev\Xkpasswd\Generator;
+use Adgodev\Xkpasswd\PasswordGenerator;
 
-Generator::generate([
+PasswordGenerator::generate([
     'pattern' => 'wdwd'
 ]);
 
@@ -97,9 +97,9 @@ Generator::generate([
 **EXAMPLE** Specify custom word list / dictionary
 
 ```php
-use Adgodev\Xkpasswd\Generator;
+use Adgodev\Xkpasswd\PasswordGenerator;
 
-Generator::generate([
+PasswordGenerator::generate([
     'wordList' => 'myWordList.json'
 ]);
 
@@ -107,9 +107,9 @@ Generator::generate([
 ```
 
 ```php
-use Adgodev\Xkpasswd\Generator;
+use Adgodev\Xkpasswd\PasswordGenerator;
 
-Generator::generate([
+PasswordGenerator::generate([
     'wordList' => 'myWordList.txt'
 ]);
 
