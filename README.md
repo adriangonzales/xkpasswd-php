@@ -48,9 +48,6 @@ One separator is used per password, picked randomly from the provided set.
 
 You can set `transform` option to `alternate` or `uppercase` to trigger case transformation.
 
-To generate multiple passwords at once you can specify the desired
-amount with the `number` argument. Defaults to 1.
-
 Finally if you'd like to use a custom list of words you can provide it
 as a JSON file, text file or an array via `wordList` function.
 
